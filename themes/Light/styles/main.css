@@ -1,0 +1,97 @@
+:root {
+  --dark-black: #181818;
+  --text-black: #2d2b2b;
+  --grey-03: #424242;
+  --logo-grey: #676867;
+  --logo-over-dark: #7A7A7A;
+  --logo-over-dark-2: #47627F;
+  --grey-06: #868686;
+  --grey-07: #8F8D8D;
+  --grey-08: #9D9B9B;
+  --grey-09: #A6A6A6;
+  --grey-10: #B8B8B8;
+  --grey-11: #C5C5C5;
+  --grey-12: #DEDEDE;
+  --text-white: #DEE0E1;
+  --background-white: #F9F9F9;
+  --portfolio-background: #EFF2F4;
+  --dark-blue: #0F2741;
+  --blue-02: #1C3855;
+  --blue-03: #2B4866;
+  --logo-blue: #385675;
+  --blue-06: #6281A3;
+  --light-blue-07: #84A4C7;
+  --light-blue-08: #99BEE6;
+  --light-blue-09: #A6CFFB;
+  --light-blue-12: #DDE7F3;
+  --light-blue-13: #EEF3F9;
+  --light: #EDF1F3; 
+  --secondary-03: #ECF2F2;
+  --secondary-02: #C5DECA;
+  --secondary-01: #66A37B;
+  --exited: #EFEFEF;
+  --blue-highlights: #08498d;
+  --blue-highlights-v2: #0553A5;
+
+
+  --baskervville: 'Baskervville', serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+body{
+  background: var(--background-white);
+}
+h1, h2, h3, h4, h6, p, ul, li, ol, span, strong, em, i{
+ text-wrap: pretty;
+}
+p:not(:last-child){
+  margin-bottom: 30px;
+}
+h1,
+h2 {
+  font-family: var(--baskervville);
+  font-weight: 400;
+  color: var(--text-black);
+}
+h1 {
+  color: var(--dark-black);
+  font-size: clamp(60px, calc(4.75rem + ((1vw - 25.6px) * 2.5)), 76px);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(55px, calc(4.375rem + ((1vw - 25.6px) * 2.3438)), 70px);
+  line-height: 1.12;
+}
+.h2-small {
+  color: var(--text-black);
+  font-size: clamp(45px, calc(3.75rem + ((1vw - 25.6px) * 2.3438)), 60px);
+  line-height: 1.25;
+}
+.h2-bold {
+  color: var(--blue-highlights);
+  font-family: var(--open-sans);
+  font-size: clamp(45px, calc(3.5625rem + ((1vw - 25.6px) * 1.875)), 57px);
+  font-weight: 600;
+  line-height: normal;
+}
+.preheader {
+  color: var(--blue-highlights);
+  font-family: var(--open-sans);
+  font-size: clamp(16px, calc(1.25rem + ((1vw - 25.6px) * 0.625)), 20px);
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+.hyphenated-words {
+  white-space: nowrap;
+}
+p, .legals ul li, .header-item {
+  color: var(--grey-03);
+  font-family: var(--open-sans);
+  font-size: clamp(17px, calc(1.4375rem + ((1vw - 25.6px) * 0.9375)), 23px);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
